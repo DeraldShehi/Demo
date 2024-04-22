@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+  header nav {
+    display: flex;
+    padding: 10px;
+  }
+  header nav ol {
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  section#section1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  section#section1 h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  section#section1 .card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  section#section1 .card-container .card {
+    width: 320px;
+    height: 295px;
+  }
+  section#section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  section#section2 #left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  section#section2 #right {
+    width: 100%;
+  }
+  section#section3 p {
+    margin: 30px;
+  }
+  section#section3 .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  section#section3 .container .card {
+    width: 300px;
+    height: 400px;
+  }
+  section#section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#section4 .input {
+    width: 100%;
+  }
+  section#section4 .contact {
+    width: 100%;
+  }
+  section#section4 .contact #icons {
+    margin-bottom: 50px;
+  }
+  footer #footer1 #text {
+    margin: 35px;
+  }
+}
+header {
+  display: flex;
+  width: 100vw;
+  height: 70px;
+}
+header nav {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo {
+  display: flex;
+}
+header nav ol {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header nav ol li {
+  margin-right: 30px;
+  font-weight: 700;
+}
+header nav ol li:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: Roboto;
+}
+body section.section1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/business-team-5.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+body section.section1 h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+body section.section1 .card-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 30px;
+  transition: ease-in-out 2s all;
+}
+body section.section1 .card-container .animate__animated .animate__backInUp {
+  animation-duration: 2s;
+}
+body section.section1 .card-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px 30px;
+  background-color: #ffffff;
+  width: 260px;
+  height: 295px;
+}
+body section.section1 .card-container .card img {
+  width: 70px;
+  height: 70px;
+}
+body section.section1 .card-container .card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+body section.section1 .card-container .card a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ff4300;
+}
+body section.section1 .card-container .card a:hover {
+  border-bottom: 1px solid black;
+}
+body section.section1 p {
+  color: #ffffff;
+  font-style: italic;
+  --animate-duration: 1s;
+  transition: ease 1s all;
+}
+body section.section1 p a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+body section.section1 p a:hover {
+  color: #ff4300;
+  border-bottom: 2px solid #ff4300;
+}
+body section.section2 {
+  display: flex;
+  padding: 100px;
+}
+body section.section2 #left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in 1s all;
+}
+body section.section2 #left h2 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+body section.section2 #left p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+body section.section2 #left span {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+body section.section2 #left span img {
+  width: 20px;
+  height: 20px;
+}
+body section.section2 #right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  transition: ease-in 1s all;
+}
+body section.section2 #right h3 {
+  font-size: 35px;
+  line-height: 2.2;
+}
+body section.section2 #right p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+body section.section3 {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
+body section.section3 h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+body section.section3 p {
+  margin: 30px 260px;
+  text-align: center;
+  line-height: 2;
+}
+body section.section3 #paragraph-2 {
+  font-style: italic;
+}
+body section.section3 #paragraph-2 a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+body section.section3 #paragraph-2 a:hover {
+  color: #ff4300;
+  border-bottom: 2px solid #ff4300;
+}
+body .container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+}
+body .container .card {
+  display: flex;
+  width: 23%;
+  height: 360px;
+  flex-direction: column;
+  transition: ease-in-out 2s all;
+}
+body .container .card .descriptions {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.799);
+  margin: 0 20px;
+  bottom: -250px;
+  height: 80px;
+}
+body .container .card .descriptions h4 {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  top: 22%;
+}
+body .container .card .descriptions p {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+body .container .card .descriptions:hover {
+  position: relative;
+  bottom: -245px;
+}
+body section.section4 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #ff4300;
+  padding: 60px;
+}
+body section.section4 .input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+body section.section4 .input input {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: rgb(107, 107, 107);
+  margin-bottom: 30px;
+  border: none;
+}
+body section.section4 .input #buttonSubmit {
+  background-color: #ffffff;
+  background-color: #ff4300;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 30px;
+  height: 60px;
+  cursor: pointer;
+}
+body section.section4 .input #buttonSubmit:hover {
+  background-color: #ffffff;
+  color: #ff4300;
+}
+body section.section4 .contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+body section.section4 .contact h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+body section.section4 .contact #icons {
+  display: flex;
+  gap: 1rem;
+  padding-left: 20px;
+  margin-bottom: auto;
+}
+body section.section4 .contact #icons i {
+  font-size: 24px;
+  color: #ffffff;
+}
+body section.section4 .contact span {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+}
+body footer #footer1 {
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  padding: 40px;
+  line-height: 1.5;
+  font-size: 12px;
+  border-bottom: 1px solid grey;
+}
+body footer #footer1 p {
+  margin: 0 350px;
+}
+body footer #footer2 {
+  padding: 40px 0;
+  text-align: center;
+}
+body footer #footer2 span {
+  color: whitesmoke;
+  font-size: 12px;
+}
+body footer #footer2 span a {
+  color: rgb(225, 167, 144);
+}/*# sourceMappingURL=style.css.map */
